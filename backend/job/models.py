@@ -28,9 +28,9 @@ class Industry(models.TextChoices):
 
 class Experience(models.TextChoices):
     No_Experience = 'No Experience'
-    One_Year = '1 year'
-    Two_Year = '2 year'
-    Three_Year_Plus='3 years above'
+    One_Year = '1 Years'
+    Two_Year = '2 Years'
+    Three_Year_Plus='3 Years above'
 
 
 class Job(models.Model):

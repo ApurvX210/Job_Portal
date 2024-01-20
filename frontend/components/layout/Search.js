@@ -10,9 +10,10 @@ const Search = () => {
       e.preventDefault()
       if(keyword){
         let searchQuery=`/?keyword=${keyword}`
-        if(location){
-          searchQuery.concat(`/?location=${location}`)
+        if(location.length>0){
+          searchQuery=searchQuery.concat(`&location=${location}`)
         }
+        console.log(searchQuery)
         router.push(searchQuery)
       }else{
         router.push('/')
